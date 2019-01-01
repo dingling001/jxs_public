@@ -45,16 +45,16 @@
                 tel = $('#tel').val(),
                 code = $('#code').val();
             if (user_name == '') {
-                $.toast('请输入姓名',"cancel");
+                $.toast('请输入姓名', "cancel");
             } else if (!telReg.test(tel)) {
                 $.toast('请输入正确的手机号')
             }
             else if (code == '') {
                 $.toast('验证码不能为空')
             } else {
-                $.loading('注册中……',1000);
+                $.loading('注册中……', 1000);
                 //To do
-
+                window.location.href = '/'
             }
         })
     })
