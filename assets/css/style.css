@@ -1,0 +1,91 @@
+* {
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.logo {
+    height: 2.7rem;
+    width: 2.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem auto 0.46rem auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.input_box {
+    display: flex;
+    align-items: center;
+    margin: 0 0.25rem 0.3rem 0.25rem;
+    background-color: #F8F8F8;
+    border-radius: 0.1rem;
+    padding: 0 0.3rem 0 0.2rem;
+}
+
+.input_box span {
+    border-left: 1px solid #C7C7C7;
+    padding: 0.1rem 0.2rem;
+    color: #c7c7c7;
+}
+
+.input_box .iconfont {
+    color: #A5A5A5;
+}
+
+input {
+    background: none;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.input_box input {
+    flex: 1;
+    padding: 0.3rem 0.2rem;
+}
+
+.input_box input::placeholder {
+    color: #C7C7C7;
+}
+
+.sub_btn {
+    margin: 1rem 0.24rem;
+    background-image: url("../img/reg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.31rem 0;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #fff;
+    border-radius: 0.1rem;
+}
+
+/*Toast 修改*/
+.weui-icon_toast {
+    margin: 0;
+}
+
+.weui-icon-success-no-circle {
+    display: none;
+}
+
+.weui-toast {
+    min-height: auto;
+    width: auto;
+    padding: 15px;
+}
+.weui-loading {
+    margin: 0;
+}
+.weui-toast__content {
+    margin: 0;
+    padding: 0;
+}

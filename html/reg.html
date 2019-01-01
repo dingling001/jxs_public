@@ -8,8 +8,54 @@
     <title>注册</title>
     <script src="../assets/js/fontSize.js"></script>
     <link rel="stylesheet" href="../assets/css/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.3/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_992799_p01sxvrge1b.css">
 </head>
 <body>
-
+<div class="logo">
+    <img src="../assets/img/logo.png" alt="">
+</div>
+<form action="">
+    <div class="input_box">
+        <div class="iconfont icon-geren11"></div>
+        <input type="text" placeholder="请输入您的姓名" id="user_name" name="">
+    </div>
+    <div class="input_box">
+        <div class="iconfont icon-shouji54"></div>
+        <input type="number" placeholder="请输入您的手机号" id='tel' name="" maxlength="11">
+        <span>获取验证码</span>
+    </div>
+    <div class="input_box">
+        <div class="iconfont icon-yanzhengyanzhengma"></div>
+        <input type="number" placeholder="请输入您的验证码" id="code" name="" maxlength="6">
+    </div>
+    <div class="sub_btn">提交</div>
+</form>
 </body>
 </html>
+<script src="../assets/js/jquery-2.1.0.js"></script>
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/0.8.3/js/jquery-weui.min.js"></script>
+<script src="../assets/js/common.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.sub_btn').click(function () {
+            var user_name = $('#user_name').val(),
+                tel = $('#tel').val(),
+                code = $('#code').val();
+            if (user_name == '') {
+                $.toast('请输入姓名',"cancel");
+            } else if (!telReg.test(tel)) {
+                $.toast('请输入正确的手机号')
+            }
+            else if (code == '') {
+                $.toast('验证码不能为空')
+            } else {
+                $.loading('注册中……',1000);
+                //To do
+
+            }
+        })
+    })
+</script>
