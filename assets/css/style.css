@@ -6,6 +6,130 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+a {
+    color: #000;
+    outline: none;
+}
+
+/*首页部分*/
+.index_top {
+    background-image: url("../img/index_top.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 105px;
+}
+
+.head_img_box {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.head_img {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 0.2rem;
+    background-color: #fff;
+}
+
+.head_img img {
+    width: 100%;
+}
+
+.head_right .name {
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+.head_right span {
+    font-size: 0.24rem;
+    color: #fff;
+    padding: 0.22rem 0;
+}
+
+.sale_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -0.7rem 0.3rem 0.33rem 0.3rem;
+    padding: 0.1rem 0.25rem 0 0.65rem;
+    background-color: #fff;
+    box-shadow: 0 3px 7px 0 rgba(94, 94, 94, 0.13);
+    border-radius: 0.1rem;
+}
+
+.sales {
+    color: #333333;
+    font-weight: bold;
+}
+
+.sales .iconfont {
+    color: #D93D36;
+}
+
+.code_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.code_img {
+    height: 0.65rem;
+    width: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 0 0.1rem 0;
+}
+
+.code_img img {
+    width: 100%;
+}
+
+.href_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-bottom: 1px solid #d2d2d2;
+    color: #000;
+}
+
+.href_item:active {
+    background-color: #f5f5f5;
+}
+
+.icon_box {
+    display: flex;
+    align-items: center;
+    font-size: 0.28rem;
+}
+
+.href_item .iconfont {
+    color: #D93D36;
+    margin-right: 0.2rem;
+}
+
+.href_item .icon-xiangyou {
+    color: #C0C0C0;
+    margin: 0;
+}
+
+.index_body {
+    background-image: url("../img/inde_bottom.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    min-height: 100vh;
+}
+
+/*注册部分*/
 .logo {
     height: 2.7rem;
     width: 2.24rem;
@@ -57,7 +181,7 @@ input {
 }
 
 .sub_btn {
-    margin: 1rem 0.24rem;
+    margin: 1rem auto;
     background-image: url("../img/reg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,6 +190,9 @@ input {
     font-size: 0.3rem;
     color: #fff;
     border-radius: 0.1rem;
+    display: block;
+    border: 0;
+    width: 93%;
 }
 
 /*Toast 修改*/
@@ -77,14 +204,19 @@ input {
     display: none;
 }
 
-.weui-toast {
+.weui_toast {
     min-height: auto;
-    width: auto;
-    padding: 15px;
+    width: 40%;
+    padding: 0 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
 .weui-loading {
     margin: 0;
 }
+
 .weui-toast__content {
     margin: 0;
     padding: 0;
