@@ -320,10 +320,13 @@ button:active {
 .my_oder_box {
     min-height: 100vh;
     background-color: #F5F6F8;
+    overflow: hidden;
 }
 
 .my_oder_nav {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -335,19 +338,56 @@ button:active {
     height: 1.5rem;
     line-height: 1.5rem;
 }
-.my_oder_nav span{
+
+.my_oder_nav span {
     transition: all 0.3s;
 }
-.my_oder_nav .span_active{
+
+.my_oder_nav .span_active {
     font-weight: bold;
     color: #F60000;
     font-size: 16px;
 }
-.my_oder_item{
-    box-shadow:0 8px 18px 0 rgba(178,178,178,0.28);
-    border-radius:10px;
 
+.my_oder_list {
+    margin: 1.8rem 0.3rem;
+    display: none;
 }
+
+.my_oder_list:first-child {
+    display: block;
+}
+.item_active{
+    color: #F60000;
+    font-weight: bold;
+}
+.my_oder_item {
+    background-color: #fff;
+    margin: 0 0 0.3rem 0;
+    box-shadow: 0 8px 18px 0 rgba(178, 178, 178, 0.28);
+    border-radius: 10px;
+    padding: 0.43rem 0.31rem;
+}
+
+.my_oder_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 0.34rem 0;
+}
+
+.my_oder_name b {
+    color: #000;
+    font-size: 14px;
+}
+
+.money {
+    color: #F60000;
+    font-weight: bold;
+}
+
 /*注册部分*/
 .logo {
     height: 2.7rem;
