@@ -13,7 +13,22 @@
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_992799_ncmc0uzdq6.css">
 </head>
 <body>
-
+<div class="my_oder_box">
+    <div class="my_oder_nav">
+        <span class="span_active">全部</span>
+        <span>待确认</span>
+        <span>已确认</span>
+        <span>已完成</span>
+    </div>
+</div>
+<div class="my_oder_list">
+    <div class="my_oder_item">
+        <div class="my_oder_name">
+            <span><span>客户姓名</span><span>王佳明</span></span>
+            <div>待确认</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 <script src="../assets/js/jquery-2.1.0.js"></script>
@@ -22,5 +37,8 @@
 <script src="../assets/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+        $('.my_oder_nav span').click(function () {
+            $(this).addClass('span_active').siblings().removeClass('span_active')
+        })
     })
 </script>
