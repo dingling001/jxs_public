@@ -5,42 +5,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的业绩</title>
+    <title>备货</title>
     <script src="../assets/js/fontSize.js"></script>
     <link rel="stylesheet" href="../assets/css/weui.min.css">
     <link rel="stylesheet" href="../assets/css/jquery-weui.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_992799_ncmc0uzdq6.css">
-    <style>
-         .order_label,.order_input{
-            color: #666;
-        }
-    </style>
 </head>
-<body class="ache_box">
-<div class="order_item ache">
-    <div class="order_label">
-        我的销量
+<body>
+<div class="ware_box">
+    <div class="ware_item">
+        <div class="ware_code">代理商代码：2011102</div>
+        <div class="ware_code">备货数量</div>
+        <div class="ware_input"><input type="number" placeholder="输入备货数量" id="ware_num"></div>
+        <div class="ware_btn ware_btn2" id="ware2">提交</div>
     </div>
-    <div class="order_input">50</div>
-</div>
-<div class="order_item">
-    <div class="order_label">
-        李先生下单数量
-    </div>
-    <div class="order_input">50</div>
-</div>
-<div class="order_item">
-    <div class="order_label">
-        李先生下单数量
-    </div>
-    <div class="order_input">50</div>
-</div>
-<div class="order_item">
-    <div class="order_label">
-        李先生下单数量
-    </div>
-    <div class="order_input">50</div>
 </div>
 </body>
 </html>
@@ -50,5 +29,13 @@
 <script src="../assets/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+        $('#ware2').click(function () {
+            var ware_num = $('#ware_num').val();
+            if (ware_num < 1) {
+                $.toast('请输入备货数量', 'cancel')
+            } else {
+                // To Do
+            }
+        })
     })
 </script>
