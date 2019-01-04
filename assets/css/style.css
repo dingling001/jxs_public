@@ -387,7 +387,15 @@ button:active {
     color: #F60000;
     font-weight: bold;
 }
-
+.noorder{
+   height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noorder img{
+    width: 78%;
+}
 /*注册部分*/
 .logo {
     height: 2.7rem;
