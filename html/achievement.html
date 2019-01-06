@@ -22,27 +22,31 @@
     <div class="order_label">
         我的销量
     </div>
-    <div class="order_input">0</div>
+    <div class="order_input"><span>1000</span><span class="icon_boxs"><span class="iconfont icon-arrow-down"></span></span>
+    </div>
 </div>
-<div class="noorder"><img src="../assets/img/noachiev.png" alt=""></div>
-<!--<div class="order_item">-->
-    <!--<div class="order_label">-->
-        <!--李先生下单数量-->
-    <!--</div>-->
-    <!--<div class="order_input">50</div>-->
-<!--</div>-->
-<!--<div class="order_item">-->
-    <!--<div class="order_label">-->
-        <!--李先生下单数量-->
-    <!--</div>-->
-    <!--<div class="order_input">50</div>-->
-<!--</div>-->
-<!--<div class="order_item">-->
-    <!--<div class="order_label">-->
-        <!--李先生下单数量-->
-    <!--</div>-->
-    <!--<div class="order_input">50</div>-->
-<!--</div>-->
+<!--<div class="noorder"><img src="../assets/img/noachiev.png" alt=""></div>-->
+<div class="order_list">
+    <div class="order_item">
+        <div class="order_label">
+            李先生下单数量
+        </div>
+        <div class="order_input">50</div>
+    </div>
+    <div class="order_item">
+        <div class="order_label">
+            李先生下单数量
+        </div>
+        <div class="order_input">50</div>
+    </div>
+    <div class="order_item">
+        <div class="order_label">
+            李先生下单数量
+        </div>
+        <div class="order_input">50</div>
+    </div>
+</div>
+
 </body>
 </html>
 <script src="../assets/js/jquery-2.1.0.js"></script>
@@ -51,5 +55,14 @@
 <script src="../assets/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+        $('.ache').click(function () {
+            $('.order_list').slideToggle();
+            if ($('.iconfont').hasClass('icon-xiangyou')) {
+                $('.iconfont ').addClass('icon-arrow-down').removeClass('icon-xiangyou')
+            } else {
+                $('.iconfont ').addClass('icon-xiangyou').removeClass('icon-arrow-down')
+            }
+
+        })
     })
 </script>
