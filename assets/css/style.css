@@ -172,11 +172,12 @@ a {
 .ache_box .order_input {
     color: #999;
 }
+
 .icon_boxs {
     margin-left: 5px;
 }
 
-.order_input .icon-xiangyou ,.order_input .icon-arrow-down {
+.order_input .icon-xiangyou, .order_input .icon-arrow-down {
     font-size: 15px;
     color: #999999;
     transition: ease-out 0.5s;
@@ -539,4 +540,16 @@ input {
 .weui-toast__content {
     margin: 0;
     padding: 0;
+}
+
+.success_box {
+    text-align: center;
+    margin: 90px 0 65px 0;
+    line-height: 26px;
+    color: #DA3F38;
+    font-size: 15px;
+}
+.success_box .icon-zhengpinbaozhangduigou{
+    font-size: 40px;
+    margin-bottom: 15px;
 }
