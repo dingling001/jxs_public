@@ -549,7 +549,130 @@ input {
     color: #DA3F38;
     font-size: 15px;
 }
-.success_box .icon-zhengpinbaozhangduigou{
+
+.success_box .icon-zhengpinbaozhangduigou {
     font-size: 40px;
     margin-bottom: 15px;
+}
+
+.new_top {
+    height: 6.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new_img {
+    width: 74%;
+    margin: 0 auto;
+    height: 5.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url("../img/code_box.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: .72rem 0 .5rem 0;
+}
+
+.new_img .new_code {
+    /*width: 51%;*/
+    width: 2.83rem;
+    height: 2.83rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new_img .new_code img {
+    width: 100%;
+}
+
+.new_img .new_text {
+    background: #D93D36;
+    box-shadow: 0px 0px 14px 4px rgba(246, 97, 87, 0.33);
+    border-radius: .3rem;
+    padding: .1rem 0;
+    text-align: center;
+    width: 51%;
+    font-size: 12px;
+    color: #fff;
+}
+
+.new_list {
+    background-color: #fff;
+    margin: .3rem 0;
+}
+
+.new_title {
+    font-size: 14px;
+    padding: .22rem .25rem;
+}
+
+.new_item {
+    display: flex;
+    align-items: center;
+    padding: .31rem .24rem;
+    border-bottom: 1px solid #F3F5F7;
+}
+
+.new_item .new_imgs {
+    width: 32.4%;
+    flex-shrink: 0;
+    /*height: 1.35rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .24rem;
+
+}
+
+.new_item .new_imgs img {
+    width: 100%;
+}
+.new_right{
+    flex: 1;
+
+}
+.new_name{
+    font-size: 14px;
+    color: #222;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width:6rem;
+    margin-bottom: .28rem;
+}
+.new_date{
+    color: #999999;
+    font-size: 11px;
+}
+.nd_title{
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+    padding: .5rem .28rem .28rem .28rem;
+}
+.nd_date{
+    color: #999;
+    font-size: 14px;
+    padding: 0 .28rem .2rem .28rem;
+}
+.nd_auth{
+    font-size: 15px;
+    color: #333;
+    padding: 0  .2rem .28rem;
+}
+.nd_content{
+    font-size: 14px;
+    line-height: .56rem;
+    text-align: justify;
+    padding: 0  .35rem;
+    color: #666;
+    text-indent: 2em;
 }
